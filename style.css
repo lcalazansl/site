@@ -108,8 +108,8 @@ body{
 .cards {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
-  grid-gap: 16px;
+  justify-content: center;
+  grid-gap: 2rem;
   margin: 2rem 0;
 }
 .cards h4{

@@ -170,18 +170,21 @@ body{
   opacity: 1;
   color: #16625D;
 }
-.footer .fa-heart {
-  color: #D23333;
+.footer-copyright .devicon {
+  opacity: 1;
 }
 .footer-copyright a {
   color: black;
-  opacity: 0.15;
   text-decoration: none;
+  opacity: .15;
   margin-left: auto;
 }
 .footer-copyright a:hover {
   opacity: 1;
-
+  text-decoration: none;
+}
+.footer-copyright{
+  font-size: 24px;
 }
 @media (max-width: 529px) {
   .footer-links{

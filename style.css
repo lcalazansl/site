@@ -11,6 +11,13 @@ body{
   padding: 1rem;
   border-radius: 50%;
   border: white solid 1px;
+  box-shadow:
+  2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
+  6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
+  12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
+  22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
+  41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05),
+  100px 100px 80px rgba(0, 0, 0, 0.07);
 }
 .links a:hover {
   text-decoration: none;
@@ -31,12 +38,12 @@ body{
   width: 15rem;
   border-radius: 50%;
   box-shadow:
-  2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
-  6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
-  12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
-  22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
-  41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05),
-  100px 100px 80px rgba(0, 0, 0, 0.07);
+    2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
+    6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
+    12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
+    22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
+    41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05),
+    100px 100px 80px rgba(0, 0, 0, 0.07);
   border: white 2px solid ;
 }
 .header{
@@ -55,14 +62,12 @@ body{
   border: solid white 1px !important;
   transition: background 0.3s ease;
   box-shadow:
-  2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
-  6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
-  12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
-  22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
-  41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05),
-  100px 100px 80px rgba(0, 0, 0, 0.07)
-;
-
+    2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
+    6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
+    12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
+    22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
+    41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05),
+    100px 100px 80px rgba(0, 0, 0, 0.07);
 }
 .btn-flat:hover {
   background: white;
@@ -76,35 +81,43 @@ body{
 }
 
 .card-projects {
-  /* height: 280px; */
   display: flex;
   flex-direction: column;
   color: white;
-  /* font-size: 24px; */
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
   border-radius: 20px;
-  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  box-shadow:
+    2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
+    6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
+    12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
+    22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
+    41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05),
+    100px 100px 80px rgba(0, 0, 0, 0.07);
   width: 350px;
   padding: 1rem;
   border: solid;
 }
+.card-projects {
+  text-align: center;
+}
 .card-projects:hover h3 {
-  letter-spacing: 3px;
+  letter-spacing: 5px;
   font-weight: bold;
 }
 .cards {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  /* grid-template-columns: 1fr 1fr; */
+  justify-content: space-evenly;
   grid-gap: 16px;
-  /* width: 100%; */
   margin: 2rem 0;
 }
 .cards h4{
   opacity: .5;
   white-space: nowrap;
   font-size: 1.1rem;
+}
+.card-projects:hover h4{
+  opacity: .7;
 }
 .card-body{
   padding: 1rem 0px !important;

@@ -153,6 +153,7 @@ body{
   padding: 1rem 50px;
   color: rgba(0,0,0,0.3);
   text-align: center;
+  margin-top: 2rem;
 }
 .footer-links {
   display: flex;

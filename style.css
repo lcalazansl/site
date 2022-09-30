@@ -33,6 +33,14 @@ body{
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
+.main{
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
 
 .avatar-bordered {
   width: 15rem;
@@ -55,6 +63,33 @@ body{
   text-align: center;
 }
 
+.bio{
+  display: flex;
+  flex-direction: column;
+  color: white;
+  gap: 1rem;
+  padding: 0 4rem;
+  text-align: justify;
+  gap: 1rem;
+  margin: 2rem 0;
+  max-width: 800px;
+}
+.bio a {
+  text-decoration: none;
+  color: white;
+  padding: 4px;
+}
+.bio a:hover {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+.bio p{
+  font-size:large;
+}
+.bio h2{
+  text-align: center;
+}
 .btn-flat {
   color: white !important;
   padding: 8px 24px;
@@ -110,7 +145,7 @@ body{
   flex-wrap: wrap;
   justify-content: center;
   grid-gap: 2rem;
-  margin: 2rem 0;
+  margin: 2rem;
 }
 .cards h4{
   opacity: .5;
@@ -190,5 +225,13 @@ body{
 @media (max-width: 529px) {
   .footer-links{
     margin-right: 0;
+  }
+}
+@media (max-width: 529px) {
+  .bio{
+    margin: 0 0rem;
+  }
+  .bio p{
+    font-size: 16px;
   }
 }

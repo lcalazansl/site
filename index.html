@@ -12,17 +12,17 @@
 
   <meta property="og:url" content="http://lluz.dev" />
   <meta property="og:type" content="website" />
-  <meta name="title" property="og:title" content="Lucas Luz - Profile Website" />
+  <meta name="title" property="og:title" content="Lucas Luz - Full-stack Web Developer" />
   <meta property="og:website" content="website" />
   <meta name="description" property="og:description" content="Browse my latest projects and relevant information about my professional life." />
-  <meta name="image" property="og:image" content= "https://lluz.dev/preview_image_lluz.png" />
+  <meta name="image" property="og:image" content= "https://lluz.dev/images/preview_image_lluz.png" />
   <meta name="author" content="Lucas Luz">
 
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="styles/css/style.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
@@ -33,7 +33,7 @@
     <main class="main">
       <div class="profile">
         <div class="header">
-          <img class="avatar-bordered" alt="avatar-bordered" src="lluz_avatar_q3_22 (low).jpg"/>
+          <img class="avatar-bordered" alt="avatar-bordered" src="images/lluz_avatar_q3_22 (low).jpg"/>
           <h1>Lucas Luz</h1>
           <h2>Full-Stack Web&nbsp;Developer</h2>
         </div>
@@ -49,7 +49,7 @@
           </a>
         </div>
         <article class="cv">
-          <a class="btn btn-flat"  target="_blank" href="Lucas_Luz_Resume.pdf">
+          <a class="btn btn-flat"  target="_blank" href="files/Lucas_Luz_Resume.pdf">
           <i class="fa fa-cloud-download" aria-hidden="true"></i>
           <span>&nbsp;CV</span>
           </a>
@@ -98,14 +98,30 @@
             </a>
           </div>
         </div> -->
+        <div class="card-projects" id="theme-switcher-card">
+          <h3>Theme Switcher</h3>
+          <h4>CSS | HTML | JS</h4>
+          <div class="card-body">
+            <p>A static website with both <strong>light and dark mode</strong> and a <strong>solarised option</strong>.</p>
+            <p>Navbar dropdown menu in CSS only, semantic HTML and user's choice is cached to be applied on reload.</p>
+          </div>
+          <div class="card-links">
+            <a class="btn btn-flat" href="https://lcalazansl.github.io/theme-switcher/">
+              <i class="fa fa-globe" aria-hidden="true"></i>
+              <span>&nbsp;site</span>
+            </a>
+            <a class="btn btn-flat" target="_blank" href="https://github.com/lcalazansl/theme-switcher">
+              <i class="fa fa-code" aria-hidden="true"></i>
+              <span>&nbsp;code</span>
+            </a>
+          </div>
+        </div>
         <div class="card-projects" id="homebarapp-card">
           <h3>Homebar App</h3>
           <h4>Ruby | Rails | HTML | SCSS | JS</h4>
           <div class="card-body">
-            <p>
-              Select the ingredients you have at home, so the app tells which cocktails you can make, or you're just a few ingredients away.
-            </br>It’s like having a bartender at your fingertips.
-            </p>
+            <p>Select the ingredients you have at home, so the app tells which cocktails you can make, or you're just a few ingredients away.</p>
+            <p>It’s like having a bartender at your fingertips.</p>
           </div>
           <div class="card-links">
             <a class="btn btn-flat" href="http://homebarapp.eu">
@@ -127,10 +143,8 @@
           <h3>Freddie's Fiets</h3>
           <h4>Ruby | Rails | HTML | SCSS | JS</h4>
           <div class="card-body">
-            <p>
-              The first full-stack project ever is a marketplace to rent or lease a bike.
-              <br>CRUD, Mapbox search and Devise.
-            </p>
+            <p>The first full-stack project ever is a marketplace to rent or lease a bike.</p>
+            <p>CRUD, Mapbox search and Devise.</p>
           </div>
           <div class="card-links">
             <a class="btn btn-flat" href="https://freddies-fiets.herokuapp.com/">

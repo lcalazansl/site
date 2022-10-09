@@ -228,11 +228,12 @@ header {
   grid-gap: 2rem;
   margin: 2rem;
 }
-section {
+.aboutme {
   min-height: fit-content;
   align-self: center;
-  margin-right: calc((100%/4)*.5) ;
-  margin-left: calc((100%/4)*.5) ;
+  margin-right: calc((100%/4)* .75) ;
+  margin-left: calc((100%/4)*  .75) ;
+  text-align: justify ;
 }
 .navbar-nav{
   display: flex;

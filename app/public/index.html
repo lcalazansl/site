@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- basic meta -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- meta data -->
+  <meta property="og:url" content="https://lluz.dev" />
+  <meta property="og:type" content="website" />
+  <meta name="title" property="og:title" content="Lucas Luz - Full-stack Web Developer" />
+  <meta property="og:website" content="website" />
+  <meta name="description" property="og:description" content="Browse my latest projects and relevant information about my professional life." />
+  <meta name="image" property="og:image" content= "https://lluz.dev/images/preview_image_lluz.png" />
+  <meta name="author" content="Lucas Luz">
+  <!-- style -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- scripts -->
+  <script defer src="../scripts/theme.js"></script>
+  <script defer src="app.js"></script>
+</head>
+<body class="light">
+
+    <!-- navbar -->
+    <nav class="navbar">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a href="#projects">Projects</a>
+        </li>
+        <!-- dropdown menu -->
+        <li class="nav-item has-dropdown">
+          <a href="#">Theme</a>
+          <ul class="dropdown">
+            <li class="dropdown-item">
+              <a href="#" id="light">light</a>
+            </li>
+            <li class="dropdown-item">
+              <a href="#" id="dark">dark</a>
+            </li>
+            <li class="dropdown-item">
+              <a href="#" id="solar">solarized</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+    <!-- main content -->
+    <main>
+      <!-- header section -->
+      <header>
+        <img class="avatar-bordered" src="../images/lluz_avatar_q3_22 (low).jpg" alt="Profile picture of Lucas">
+        <h1>Lucas Luz</h1>
+        <h2>Full-Stack Web&nbsp;Developer</h2>
+        <section class="links">
+          <a href="https://www.linkedin.com/in/lcalazansl/" target="_blank">
+            <i class="fa link-icon fa-linkedin" aria-hidden="true"></i>
+          </a>
+          <a href="mailto:contact@lluz.dev?subject=What%20is%20your%20message%20about?&body=Write your message here, and I will be happy to answer it." target="_blank">
+            <i class="fa link-icon fa-paper-plane" aria-hidden="true"></i>
+          </a>
+          <a href="https://github.com/lcalazansl" target="_blank">
+            <i class="fa link-icon fa-github" aria-hidden="true"></i>
+          </a>
+        </section>
+        <a class="btn btn-flat"  target="_blank" href="../files/Lucas_Luz_CV.pdf">
+          <i class="fa link-icon fa-cloud-download" aria-hidden="true"></i>
+          <span>&nbsp;CV</span>
+        </a>
+      </header>
+      <!-- about me -->
+      <section class="aboutMe">
+        <h2 id="about">About Me</h2>
+        <p>As a <strong>full-stack developer</strong>, I started my career with <strong>ruby</strong> and rapidly improved my stack with <strong>JS (node/React)</strong>. I have a background in managing best-in-class end-to-end projects, events and teams from different sizes and cultures, as well as budgeting and writing business plans.</p>
+        <p>Due to my background in hospitality and personality, I can communicate easily with clients and colleagues regardless of their level or needs. During the pandemic, I gave coffee and cocktails workshops to 800+ people.</p>
+        <p>I have recently been responsible for Google's internal catering services and external events in Amsterdam. After living in the Netherlands for the past four years, I've decided to pursue my love for technology by completing <strong>Le Wagon's Full-Stack Bootcamp</strong>.</p>
+        <p><strong>Below the surface:</strong></p>
+        <ul>
+          <li>I usually cycle or code and host friends for board games and food in my free time.</li>
+          <li>I’m a former Bartender and Barista.</li>
+        </ul>
+        <p><strong>Ask me about:</strong> JavaScript, bikes, food, coffee and tech.</p>
+        <p>You can find my latest public projects on my <a href="https://github.com/lcalazansl">GitHub</a> or <a href="#projects">website</a> as I keep working to improve myself and my work.</p>
+      </section>
+      <!-- cards -->
+      <h2 id="projects">Latest Projects</h2>
+      <section class="cards">
+        <article class="card" id="homebarapp-card">
+          <div class="card-header">
+            <h3>Homebar App</h3>
+            <h4>Ruby | Rails | HTML | SCSS | JS</h4>
+          </div>
+          <div class="card-body">
+            <p>Select the ingredients you have at home, so the app tells which cocktails you can make, or you're just a few ingredients away.</p>
+            <p>It’s like having a bartender at your fingertips.</p>
+          </div>
+          <div class="card-links">
+            <a class="btn btn-flat" href="http://homebarapp.eu"><i class="fa fa-globe" aria-hidden="true"></i>
+              <span>&nbsp;site</span>
+            </a>
+            <a class="btn btn-flat" target="_blank" href="https://github.com/lcalazansl/homebarapp"><i class="fa fa-code" aria-hidden="true"></i>
+              <span>&nbsp;code</span>
+            </a>
+            <a class="btn btn-flat" target="_blank" href="https://www.youtube.com/watch?v=rEgCTAod_Ds"><i class="fa fa-youtube-play" aria-hidden="true"></i>
+              <span>&nbsp;demo</span>
+            </a>
+          </div>
+        </article>
+        <article class="card" id="freddies-fiets-card">
+          <div class="card-header">
+            <h3>Freddie's Fiets</h3>
+            <h4>Ruby | Rails | HTML | SCSS | JS</h4>
+          </div>
+          <div class="card-body">
+            <p>The first full-stack project ever is a marketplace to rent or lease a bike.</p>
+            <p>CRUD, Mapbox search and Devise.</p>
+          </div>
+          <div class="card-links">
+            <a class="btn btn-flat" href="https://freddies-fiets.herokuapp.com/"><i class="fa fa-globe" aria-hidden="true"></i>
+              <span>&nbsp;site</span>
+            </a>
+            <a class="btn btn-flat" target="_blank" href="https://github.com/alvarotrujillo/freddies-fiets"><i class="fa fa-code" aria-hidden="true"></i>
+              <span>&nbsp;code</span>
+            </a>
+          </div>
+        </article>
+        <article class="card" id="theme-switcher-card">
+          <div class="card-header">
+            <h3>Theme Switcher</h3>
+            <h4>CSS | HTML | JS</h4>
+          </div>
+          <div class="card-body">
+            <p>A static website with both <strong>light and dark mode</strong> and a <strong>solarised option</strong>.</p>
+            <p>Navbar dropdown menu in CSS only, semantic HTML and user's choice is cached to be applied on reload.</p>
+          </div>
+          <div class="card-links">
+            <a class="btn btn-flat" href="https://lcalazansl.github.io/theme-switcher/"><i class="fa fa-globe" aria-hidden="true"></i>
+              <span>&nbsp;site</span>
+            </a>
+            <a class="btn btn-flat" target="_blank" href="https://github.com/lcalazansl/theme-switcher"><i class="fa fa-code" aria-hidden="true"></i>
+              <span>&nbsp;code</span>
+            </a>
+          </div>
+        </article>
+      </section>
+    </main>
+    <!-- footer -->
+    <footer class="footer">
+        <ul class="footer-nav">
+          <li class="footer-nav-item">
+            <a href="https://www.linkedin.com/in/lcalazansl/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+          </li>
+          <li class="footer-nav-item">
+            <a href="mailto:contact@lluz.dev" target="_blank"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+          </li>
+          <li class="footer-nav-item">
+            <a href="https://github.com/lcalazansl" target="_blank" class=""><i class="fa fa-github" aria-hidden="true"></i></a>
+          </li>
+          <p>This website is made with <i class="fa fa-coffee" aria-hidden="true"></i> by Lucas Luz.</p>
+        </ul>
+    </footer>
+
+</body>
+</html>

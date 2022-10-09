@@ -59,6 +59,9 @@ body {
   grid-template-rows: auto 1fr auto;
   grid-template-areas: "nav" "main" "footer";
 }
+h2{
+  text-align: center;
+}
 nav {
   grid-area: nav;
   height: 70px;
@@ -109,6 +112,66 @@ header {
     padding-bottom: 1em;
     font-size: larger;
   }
+}
+.btn-flat {
+  color: var(--border-color);
+  border: solid var(--border-color) 1px;
+  padding: 8px 24px;
+  border-radius: 4px;
+  transition: background 0.3s ease;
+  box-shadow: var(--box-shadow);
+}
+.btn-flat:hover {
+  background: var(--border-color);
+  color: var(--body-font);
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  color: var(--body-font);
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  border-radius: 20px;
+  box-shadow:var(--box-shadow);
+  min-width: 291px;
+  max-width: 350px;
+  padding: 1rem;
+  border: solid 1px var(--border-color);
+  text-align: center;
+  .btn-flat {
+    border: none;
+    box-shadow: none;
+  }
+  h4{
+    opacity: .5;
+    white-space: nowrap;
+    font-size: 1.1rem;
+  }
+  .card-links {
+    display: flex;
+    justify-content: center;
+  }
+
+}
+.card-body{
+  padding: 1rem 0px !important;
+  margin: 0px;
+  text-align: justify;
+}
+.card:hover {
+  h3{
+  letter-spacing: 5px;
+  font-weight: bold;
+  }
+  h4{
+    opacity: .7;
+  }
+}
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  grid-gap: 2rem;
+  margin: 2rem;
 }
 section {
   min-height: fit-content;
@@ -181,6 +244,9 @@ section {
     margin-right: 10px;
   }
 }
+
+
+
 #dark::before {
   background: #2a2e35;
 }
@@ -190,6 +256,10 @@ section {
 #solar::before {
   background: var(--bg-solar);
 }
+
+
+
+
 @media (max-width: 529px) {
   .dropdown {
     width: max-content;

@@ -92,13 +92,18 @@ main {
 footer {
   grid-area: footer;
   height: 70px;
-  width: 100%;
+  // width: 100%;
   color: var(--text);
   background: var(--bg-nav);
   display: flex;
-  justify-content:space-evenly;
-  margin: 0 1em;
-  padding: 1em;
+  justify-content:space-between;
+  margin: 0 2em;
+  gap: 1em;
+  .footer-copyright {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
 }
 h1 {
   font-family: var(--header-font);

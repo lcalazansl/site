@@ -163,7 +163,7 @@ section {
   align-items: center;
   justify-content: space-around;
   height: 3em;
-  margin-top: 1em;
+  margin-top: 1.5em;
   box-shadow: var(--box-shadow);
   transform: translateX(-80%);
   transition: opacity 0.15s ease-out;

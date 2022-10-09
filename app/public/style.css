@@ -1,0 +1,222 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Playfair+Display:wght@400;500;600;800&family=Poppins:wght@200;400;500;600;700&display=swap");
+:root {
+  --header-font: "Fira Sans" sans-serif;
+  --subheading-font: "Lusitana", serif;
+  --body-font: "Alegreya Sans", sans-serif;
+  --gray0: #f8f8f8;
+  --gray1: #dbe1e8;
+  --gray2: #b2becd;
+  --gray3: #6c7983;
+  --gray4: #454e56;
+  --gray5: #2a2e35;
+  --gray6: #12181b;
+  --blue: #0084a5;
+  --purple: #a82dd1;
+  --yellow: #fff565;
+  --box-shadow:
+    2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
+    6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
+    12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
+    22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
+    41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05),
+    100px 100px 80px rgba(0, 0, 0, 0.07);
+}
+
+.light {
+  --bg: var(--gray0);
+  --bg-nav: linear-gradient(to right, var(--gray1), var(--gray3));
+  --bg-dropdown: var(--gray0);
+  --text: var(--gray6);
+  --border-color: var(--blue);
+  --bg-solar: var(--yellow);
+}
+
+.dark {
+  --bg: var(--gray5);
+  --bg-nav: linear-gradient(to right, var(--gray5), var(--gray6));
+  --bg-dropdown: var(--gray6);
+  --text: var(--gray0);
+  --border-color: var(--purple);
+  --bg-solar: var(--blue);
+}
+
+.solar {
+  --gray0: #fbffd4;
+  --gray1: #f7f8d0;
+  --gray2: #b6f880;
+  --gray3: #5ec72d;
+  --gray4: #3ea565;
+  --gray5: #005368;
+  --gray6: #003d4c;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--body-font);
+  color: var(--text);
+  background: var(--bg-nav);
+  transition: background 500ms ease-in-out, color 1000ms ease-in-out;
+  display: grid;
+  min-height: 100vh;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas: "nav" "main" "footer";
+}
+
+nav {
+  grid-area: nav;
+  height: 70px;
+  width: 100%;
+  color: var(--text);
+  background: var(--bg-nav);
+  position: fixed;
+  z-index: 1;
+}
+
+main {
+  grid-area: main;
+  margin-top: 70px;
+  background: var(--bg);
+  padding-bottom: 1rem;
+}
+
+footer {
+  grid-area: footer;
+  height: 70px;
+  width: 100%;
+  color: var(--text);
+  background: var(--bg-nav);
+  display: flex;
+  justify-content: space-around;
+}
+
+h1 {
+  font-family: var(--header-font);
+}
+
+h2 {
+  font-family: var(--subheading-font);
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: currentColor;
+  text-decoration: none;
+}
+
+header {
+  padding: 1rem;
+  background: var(--bg-nav);
+  margin-bottom: 1em;
+  padding-bottom: 2em;
+  text-align: center;
+  clip-path: polygon(100% 0%, 100% 60%, 50% 100%, 0% 60%, 0% 0%);
+}
+header .link-icon {
+  padding-bottom: 1em;
+  font-size: larger;
+}
+
+section {
+  min-height: fit-content;
+  align-self: center;
+  margin-right: 12.5%;
+  margin-left: 12.5%;
+}
+
+.navbar-nav, .footer-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 100%;
+}
+
+.footer-nav {
+  gap: 2em;
+}
+
+.avatar, .avatar-bordered {
+  margin: 2em 0 0;
+  width: 240px;
+  border-radius: 50%;
+}
+
+.avatar-bordered {
+  border: solid 3px var(--border-color);
+}
+
+.dropdown {
+  position: absolute;
+  width: 500px;
+  opacity: 0;
+  z-index: 2;
+  background: var(--bg-dropdown);
+  border-top: solid 2px var(--border-color);
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 3em;
+  margin-top: 1em;
+  box-shadow: var(--box-shadow);
+  transform: translateX(-80%);
+  transition: opacity 0.15s ease-out;
+}
+
+.has-dropdown:focus-within .dropdown {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.dropdown-item a {
+  width: 100%;
+  height: 100%;
+  size: 1em;
+  padding-left: 10px;
+  font-weight: bold;
+}
+.dropdown-item a::before {
+  content: " ";
+  border: 2px solid var(--border-color);
+  background-color: var(--bg);
+  border-radius: 50%;
+  width: 2em;
+  height: 2em;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+#dark::before {
+  background: #2a2e35;
+}
+
+#light::before {
+  background: #ffffff;
+}
+
+#solar::before {
+  background: var(--bg-solar);
+}
+
+@media (max-width: 529px) {
+  .dropdown {
+    width: max-content;
+    padding: 0 1em;
+    transform: translateX(-50%);
+    font-size: smaller;
+  }
+  .dropdown-item a::before {
+    width: 1rem;
+    height: 1rem;
+    margin-right: 5px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

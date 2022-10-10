@@ -3,6 +3,7 @@ const darkButton = document.getElementById('dark');
 const lightButton = document.getElementById('light');
 const solarButton = document.getElementById('solar');
 const body = document.body;
+const toggleOnCard = document.getElementById('card-toggle')
 
 // Apply the chached theme on reload
 const theme = localStorage.getItem('theme');
@@ -17,11 +18,13 @@ if (theme) {
 darkButton.onclick = () => {
   body.classList.replace('light', 'dark');
   localStorage.setItem('theme', 'dark');
+  toggleOnCard.classList.replace('fa-toggle-off', 'fa-toggle-on');
 }
 
 lightButton.onclick = () => {
   body.classList.replace('dark', 'light');
   localStorage.setItem('theme', 'light');
+  isSolar && toggleOnCard.classList.replace('fa-toggle-on', 'fa-toggle-off');
 }
 
 solarButton.onclick = () => {
@@ -36,5 +39,6 @@ solarButton.onclick = () => {
     body.classList.add('solar');
     solarButton.innerText = 'normalize';
     localStorage.setItem('isSolar', true);
+    // toggleOnCard.classList.replace('fa-toggle-off', 'fa-toggle-on');
   }
 }

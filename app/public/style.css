@@ -188,7 +188,7 @@ header .cv {
   border-radius: 4px;
   transition: background 0.3s ease;
   box-shadow: var(--box-shadow);
-  margin-top: 2rem;
+  margin-top: 0.5rem;
 }
 
 .btn-flat:hover {
@@ -320,6 +320,12 @@ header .cv {
   margin-right: 10px;
 }
 
+#unit-converter-card .card-body {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
 #dark::before {
   background: #2a2e35;
 }
@@ -332,11 +338,31 @@ header .cv {
   background: var(--bg-solar);
 }
 
+.card-body .converter {
+  display: flex;
+  text-align: center;
+}
+.card-body .converter input {
+  width: 80%;
+}
+.card-body .converter .converter-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  vertical-align: middle;
+}
+
+#converter-formula {
+  font-size: smaller;
+  padding: 0 2em;
+  text-align: center;
+}
+
 @media (max-width: 529px) {
   .dropdown {
     width: max-content;
     padding: 0 1em;
-    transform: translateX(-50%);
+    transform: translateX(-70%);
     font-size: smaller;
   }
   .dropdown-item a::before {

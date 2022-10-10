@@ -18,6 +18,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <!-- scripts -->
   <script defer src="../scripts/theme.js"></script>
+  <script defer src="../scripts/converter.js"></script>
   <script defer src="app.js"></script>
 </head>
 <body class="light">
@@ -97,7 +98,7 @@
       <section class="cards">
         <article class="card" id="homebarapp-card">
           <div class="card-header">
-            <h3>Homebar App</h3>
+            <h3><i class="fa fa-glass" aria-hidden="true"></i> Homebar App</h3>
             <h4>Ruby | Rails | HTML | SCSS | JS</h4>
           </div>
           <div class="card-body">
@@ -118,7 +119,7 @@
         </article>
         <article class="card" id="freddies-fiets-card">
           <div class="card-header">
-            <h3>Freddie's Fiets</h3>
+            <h3><i class="fa fa-bicycle" aria-hidden="true"></i> Freddie's Fiets</h3>
             <h4>Ruby | Rails | HTML | SCSS | JS</h4>
           </div>
           <div class="card-body">
@@ -136,8 +137,8 @@
         </article>
         <article class="card" id="theme-switcher-card">
           <div class="card-header">
-            <h3>Theme Switcher</h3>
-            <h4>CSS | HTML | JS</h4>
+            <h3><i class="fa fa-toggle-off" aria-hidden="true"></i> Theme Switcher</h3>
+            <h4>SCSS | HTML | JS</h4>
           </div>
           <div class="card-body">
             <p>A static website with both <strong>light and dark mode</strong> and a <strong>solarised option</strong>.</p>
@@ -148,6 +149,32 @@
               <span>&nbsp;site</span>
             </a>
             <a class="btn btn-flat" target="_blank" href="https://github.com/lcalazansl/theme-switcher"><i class="fa fa-code" aria-hidden="true"></i>
+              <span>&nbsp;code</span>
+            </a>
+          </div>
+        </article>
+        <article class="card" id="unit-converter-card">
+          <div class="card-header">
+            <h3><i class="fa fa-calculator" aria-hidden="true"></i> Unit Converter</h3>
+            <h4> JS | SCSS | HTML </h4>
+          </div>
+          <div class="card-body">
+            <p>A simple unit converter from metric to imperial system. It converts live as you type the origin value.</p>
+            <div class="converter">
+              <div class="converter-group">
+                <input type="button" value="kg" id="btnA">
+                <input type="text" name="" id="inputA" placeholder="kg">
+              </div>
+              <p>X</p>
+              <div class="converter-group">
+                <input type="button" value="lbs" id="btnB">
+                <input type="text" name="" id="inputB" placeholder="lbs">
+              </div>
+            </div>
+            <p id="converter-formula"></p>
+          </div>
+          <div class="card-links">
+            <a class="btn btn-flat" target="_blank" href="https://github.com/lcalazansl/site/tree/master/scripts"><i class="fa fa-code" aria-hidden="true"></i>
               <span>&nbsp;code</span>
             </a>
           </div>

@@ -204,7 +204,7 @@ header .cv {
   border-radius: 20px;
   box-shadow: var(--box-shadow);
   min-width: min-content;
-  max-width: 350px;
+  max-width: 300px;
   padding: 1rem;
   border: solid 1px var(--border-color);
   text-align: center;
@@ -374,6 +374,10 @@ header .cv {
     width: 1rem;
     height: 1rem;
     margin-right: 5px;
+  }
+  .aboutme {
+    margin-right: 12.5%;
+    margin-left: 12.5%;
   }
 }
 

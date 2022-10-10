@@ -188,7 +188,7 @@ header {
   border-radius: 20px;
   box-shadow:var(--box-shadow);
   min-width: min-content;
-  max-width: 350px;
+  max-width: 300px;
   padding: 1rem;
   border: solid 1px var(--border-color);
   text-align: center;
@@ -360,4 +360,8 @@ header {
     height: 1rem;
     margin-right: 5px;
   }
-}
+  .aboutme {
+    margin-right: calc((100%/4)* .5) ;
+    margin-left: calc((100%/4)*  .5) ;
+  }
+  }

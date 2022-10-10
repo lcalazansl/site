@@ -24,7 +24,7 @@ darkButton.onclick = () => {
 lightButton.onclick = () => {
   body.classList.replace('dark', 'light');
   localStorage.setItem('theme', 'light');
-  isSolar && toggleOnCard.classList.replace('fa-toggle-on', 'fa-toggle-off');
+  toggleOnCard.classList.replace('fa-toggle-on', 'fa-toggle-off');
 }
 
 solarButton.onclick = () => {

@@ -248,12 +248,17 @@ header .cv {
   margin: 2rem;
 }
 
+#projects {
+  padding-top: 2rem;
+}
+
 .aboutme {
   min-height: fit-content;
   align-self: center;
   margin-right: 18.75%;
   margin-left: 18.75%;
   text-align: justify;
+  padding-top: 2rem;
 }
 
 .navbar-nav, .footer-nav {

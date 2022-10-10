@@ -233,12 +233,16 @@ header {
   grid-gap: 2rem;
   margin: 2rem;
 }
+#projects {
+  padding-top: 2rem;
+}
 .aboutme {
   min-height: fit-content;
   align-self: center;
   margin-right: calc((100%/4)* .75) ;
   margin-left: calc((100%/4)*  .75) ;
   text-align: justify ;
+  padding-top: 2rem;
 }
 .navbar-nav{
   display: flex;

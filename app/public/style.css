@@ -363,6 +363,13 @@ header .cv {
   text-align: center;
 }
 
+#most-used-languages-card {
+  background: white;
+}
+#most-used-languages-card img {
+  width: 100%;
+}
+
 @media (max-width: 529px) {
   .dropdown {
     width: max-content;

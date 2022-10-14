@@ -210,7 +210,6 @@ header {
   display: grid;
   // min-height: 100vh;
   grid-template-rows: auto 1fr auto;
-  // grid-template-areas: "nav" "main" "footer";
 }
 .card-body{
   padding: 0 1em;
@@ -341,12 +340,19 @@ header {
     vertical-align: middle;
   }
 }
+
+
 #converter-formula {
   font-size: smaller;
   padding: 0 2em;
   text-align: center;
 }
-
+#most-used-languages-card {
+  background: white;
+  img {
+    width: 100%;
+  }
+}
 
 @media (max-width: 529px) {
   .dropdown {

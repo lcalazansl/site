@@ -370,6 +370,11 @@ header .cv {
   width: 100%;
 }
 
+#gh-stats-img {
+  border-radius: 12px;
+  max-width: 250px;
+}
+
 @media (max-width: 529px) {
   .dropdown {
     width: max-content;

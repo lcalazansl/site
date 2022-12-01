@@ -354,6 +354,11 @@ header {
   }
 }
 
+#gh-stats-img {
+  // border: solid 1px black;
+  border-radius: 12px;
+  max-width: 250px;
+}
 @media (max-width: 529px) {
   .dropdown {
     width: max-content;
